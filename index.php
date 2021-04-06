@@ -7,26 +7,26 @@
   <title>Document</title>
 </head>
 <body>
-  <?php 
-  <form action="userinfo.php" method="get" enctype="multipart/form-data"> 
+
+  <form action="userinfo.php" method="post" enctype="multipart/form-data"> 
 
   <label>Name</label>
   <input type="text" name="name">
   <label>Category</label>
   <select name="category">
 
-  <option>blabla</option>
+  <option value="katt">blabla</option>
 
   </select>
   <label>BirthDay</label>
   <input type="date" name="birthday"/>
-  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="file" name="file" id="fileToUpload">
   <input type="submit" value="Send"/>
  
 
  
   </form>
  
-  ?>
+
 </body>
 </html>
