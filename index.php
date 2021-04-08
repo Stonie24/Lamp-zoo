@@ -19,13 +19,12 @@
     <option value="Fågel">Fågel</option>
     <option value="Insekt">Insekt</option>
     </select>
-    <label>BirthDay</label>
-    <input type="date" name="birthday"/>
+   
     <input type="submit" value="Submit"/>
   </form>
 
   <!-- Filuppladnings form -->
-  <form action="userinfo.php" method="post" enctype="multipart/form-data">
+  <form action="uploaded.php" method="post" enctype="multipart/form-data">
   <label>Select image to upload:</label>
   <input type="file" name="fileToUpload" id="fileToUpload">
   <input type="submit" value="Upload Image" name="submit">
@@ -37,7 +36,7 @@
 // Hämtar och sparar informationen i variabler från forumuläret
 $name = trim($_POST['name']);
 $category = trim($_POST['category']);
-$birthday = trim($_POST['birthday']);
+
 
 // Kollar om man har fyllt i något i formuläret, visar ett fel meddelande annars
 if ( !$category && !$name ){
