@@ -1,0 +1,23 @@
+* {
+  margin:0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uploadContainer {
+  font-size: 2rem;
+  max-width: 800px;
+  
+}
+
+.succes {
+  color:chartreuse;
+}
+.danger {
+  color:red;
+}
