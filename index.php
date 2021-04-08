@@ -5,15 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="container">
   <h1><strong>Lamp Zoo</strong></h1>
   <!-- Sökform -->
-  <form action="index.php" method="POST" enctype="multipart/form-data"> 
+  <form class="searchForm" action="index.php" method="POST" enctype="multipart/form-data"> 
     <label>Name</label>
     <input type="text" name="name">
     <label>Category</label>
     <select name="category">
+    <option value=""></option>
     <option value="Fisk">Fisk</option>
     <option value="Däggdjur">Däggdjur</option>
     <option value="Fågel">Fågel</option>
@@ -24,7 +27,7 @@
   </form>
 
   <!-- Filuppladnings form -->
-  <form action="uploaded.php" method="post" enctype="multipart/form-data">
+  <form class="fileUpload" action="uploaded.php" method="post" enctype="multipart/form-data">
   <label>Select image to upload:</label>
   <input type="file" name="fileToUpload" id="fileToUpload">
   <input type="submit" value="Upload Image" name="submit">
@@ -113,5 +116,6 @@ switch ($name) {
   echo "Tomt";
 }
 ?>
+</div>
 </body>
 </html>
