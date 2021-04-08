@@ -8,8 +8,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <div class="file">
+<a href="https://fontmeme.com/star-wars-font/"><img src="https://fontmeme.com/permalink/210408/64c5d5dd97147fd2c6ec2133e2d51c78.png" alt="star-wars-font" border="0"></a>
+  <form class="fileUpload" action="uploaded.php" method="post" enctype="multipart/form-data">
+  <label>Select image to upload:</label>
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+  </form>
+</div>
+
   <div class="container">
-  <h1><strong>Lamp Zoo</strong></h1>
+
   <!-- Sökform -->
   <form class="searchForm" action="index.php" method="POST" enctype="multipart/form-data"> 
     <label>Name</label>
@@ -22,16 +32,12 @@
     <option value="Fågel">Fågel</option>
     <option value="Insekt">Insekt</option>
     </select>
+   <div class="btndiv"> <input type="submit" value="Submit" class="btn"/></div>
    
-    <input type="submit" value="Submit"/>
   </form>
 
   <!-- Filuppladnings form -->
-  <form class="fileUpload" action="uploaded.php" method="post" enctype="multipart/form-data">
-  <label>Select image to upload:</label>
-  <input type="file" name="fileToUpload" id="fileToUpload">
-  <input type="submit" value="Upload Image" name="submit">
-  </form>
+
 
 
 <?php
@@ -116,6 +122,8 @@ switch ($name) {
   echo "Tomt";
 }
 ?>
+
 </div>
+
 </body>
 </html>

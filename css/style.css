@@ -13,7 +13,7 @@ body {
 .container {
   max-width: 400px;
   margin: 0 auto;
-  border: 1px solid black;
+
 }
 h1 {
   text-align: center;
@@ -25,9 +25,10 @@ width: 100%;
 margin: 0 auto;
 }
 
-.fileUpload {
+.fileupload {
   margin:0 auto;
-  width: 100%;
+  width: 50%;
+ display: flex;
 }
 img {
   width:100%
@@ -51,38 +52,46 @@ img {
 
 
 
+.file{
+font-size: 28px;
+display:flex;
+justify-content: space-around;
+padding-bottom: 200px;
+}
 
+table{
+  width: 100%;
+}
 
-
-
-
-    img{
-      width: 200px;
-      height: 200px;
+    .btndiv{
+      display:flex;
+      justify-content: center;
     }
 
 
- button {
+ .btn {
         display: inline-block;
-        background-color: #7b38d8;
+        background-color: #023f00;
         border-radius: 10px;
         border: 4px double #cccccc;
         color: #eeeeee;
         text-align: center;
-        font-size: 28px;
+        font-size: 14px;
         padding: 20px;
-        width: 200px;
+        width: 150px;
         transition: all 0.5s;
         cursor: pointer;
         margin: 5px;
+        display: flex;
+        justify-content: center;
       }
-      button span {
+      .btn span {
         cursor: pointer;
         display: inline-block;
         position: relative;
         transition: 0.5s;
       }
-      button span:after {
+      .btn span:after {
         content: '\00bb';
         position: absolute;
         opacity: 0;
@@ -90,13 +99,13 @@ img {
         right: -20px;
         transition: 0.5s;
       }
-      button:hover {
-        background-color: #f7c2f9;
+      .btn:hover {
+        background-color: #477c4a;
       }
-      button:hover span {
+      .btn:hover span {
         padding-right: 25px;
       }
-      button:hover span:after {
+      .btn:hover span:after {
         opacity: 1;
         right: 0;
       }
